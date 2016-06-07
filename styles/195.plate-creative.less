@@ -1,0 +1,264 @@
+body {
+	background-color: @body-bg-color;
+	.zestyBackground(@body-bg-image);
+}
+
+
+.side-bar{
+	padding: @sidebar-padding;
+	background-color: @sidebar-bg-color;
+	.border-radius(@sidebar-border-radius);	
+	border: 1px @sidebar-border-color solid;
+}
+
+.z-container { 
+	max-width: @container-max-width; 
+	padding: 0px @default-spacing;
+	margin: 0px auto;
+	background: none;
+}
+
+.structure { 
+	clear:both;
+	padding: @default-spacing 0px;
+	position: relative;
+	max-width: @container-max-width;
+	margin: 0px auto;
+	
+}
+
+/* header  */
+
+.header {
+	min-height: 60px;
+	a.logo {
+		
+		float:left;
+		max-width: @logo-max-width;
+		img { 
+			width: 100%; 
+			max-width:@logo-max-width;
+		}	
+		&:hover {
+			img {
+				.opacity(90);
+			}
+		}
+	}
+}
+
+
+/* content container */
+.content-container {
+	clear: both;
+	background: @content-bg-color;
+	
+	.content{
+		min-height: @default-spacing * 20;
+		//color: @z-font-primary-color;
+		
+		h1, h2, h3 {
+			//color: @z-font-primary-color;
+		}
+		
+		
+		
+		.category-chooser {
+			padding-bottom: @default-spacing;
+			margin-left: 0px;
+			li {
+				font-style: italic;
+				margin: 0px (@default-spacing / 4);
+				display:inline-block;
+				list-style: none;
+				a {
+					text-decoration: none;
+					font-size: @h5-font-size;
+					font-family: @heading-font;
+					font-style: italic;
+					margin-left: (@default-spacing / 2);
+					.transition(all 250ms ease);
+					
+					&.at {
+						color: @link-hover-color;	
+					}
+				}
+				&:first-child{
+					a{
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+		
+		.portfolio-wrap {
+			padding-bottom: @default-spacing * 2;
+			
+			
+			.portfolio-item {
+				.transition(all 250ms ease);
+				overflow: hidden;
+				img{
+					.transition(all 250ms ease);
+					width: 100%;	
+				}
+				
+				&.hidden {
+					height: 0px;
+					width: 0px;
+					.opacity(0);
+					margin: 0px;
+					
+					img {
+						height: 0px;
+						width: 0px;
+					}
+					.name {
+						display: none;
+					}
+				}
+				
+				.name {
+					//font-family: @z-header-font;
+					font-style: italic;
+					//background: @z-background-secondary-color;
+					//color: @z-font-primary-color;
+				}
+				
+			}
+		}
+		
+	} // end of .content
+	
+	
+} // end of .contentContainer
+
+/* footer  */
+.footer-container{
+	background-color: darken(@content-bg-color,10%);	
+	.footer { 
+		
+		padding-top: @default-spacing;
+		padding-bottom: @default-spacing * 2;
+		
+		
+		.fl {
+			float: left;
+			width: 30%;
+			padding: 0px 0px (@default-spacing/2) 2%;
+		}
+		
+		ul#nav {
+			float:none;
+			text-align: center;
+			padding-bottom: @default-spacing;
+			margin-top: @default-spacing;
+			li {
+				margin-bottom: @default-spacing / 2;
+				list-style: none;
+				float:none;
+				display: inline-block;
+				
+				a {
+					text-decoration: none;
+					color: spin(@nav-font-color,180);
+					
+					&:hover{
+						color: spin(@nav-font-color,170);	
+					}
+					
+					&.at {
+						font-weight: bold;
+					}
+				}
+			}
+			
+			ul {
+				display: none;
+			}
+		}
+		
+		.contact-footer{
+			text-align: center;
+			color: darken(@fallback-font-color,45%);
+			a,span{
+				color: darken(@fallback-font-color,35%);
+				padding: 0px (@default-spacing / 2);
+			}
+		}
+	}
+}
+
+.social-links {
+	float:right;
+	margin: 0px;
+}
+
+/* navigation  */
+
+ul#nav { 
+	
+	float: right;
+	text-align: left;
+	margin: 0px;
+	margin-top: @default-spacing * 2 ;
+	padding: 0px;  
+	line-height: 0px;
+	
+	li { 
+		display: inline-table; 
+		list-style: none;  
+		margin: 0px; 
+		padding: 0px; 
+		line-height: 0px;
+		float: left; // for ie
+		outline: 0;
+		
+		a { 
+			text-decoration: none;
+			font-family: @nav-font;
+			height: @nav-height;
+			line-height: @nav-height;
+			font-size: @nav-font-size;
+			color: @nav-font-color;
+			padding: 0px @nav-link-padding-right 0px @nav-link-padding-left;
+			margin: 0px;
+			outline: 0;
+			font-weight: 300;
+			&:hover {
+				color: @nav-hover-font-color;
+				cursor: pointer;
+			}
+			
+			// a style that attaches to the url you are on, the "you are here" class
+			&.at,&.at:hover{
+				color: @nav-hover-font-color;
+				cursor: default;
+				font-weight: bold;
+			}
+		}
+		ul { 
+			display: none; // hides dropdowns
+		}
+	}
+}
+
+
+
+/* footer copyright */
+.copyright { 
+	clear: both; 
+	text-align: center; 
+	font-size: 10px; 
+	padding: (@default-spacing*1.5) 0px (@default-spacing/2) 0px; 
+}
+
+// clear
+
+.clear,.floatfix{ 
+	clear:both
+}
+
+.page404 { 
+	text-align: center; 
+}

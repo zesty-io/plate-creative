@@ -1,0 +1,138 @@
+
+/* our usual structure width that starts changing page width */
+@media screen and (max-width: @container-max-width) {
+	
+}
+
+/* ipads portrait */
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (min-width: 480px) {
+	#toggle-nav {
+		display: none;
+	}
+	
+	.navigation {
+		display: block !important;
+		height: auto !important;
+	}
+}
+
+/* iphones landscape */
+@media screen and (max-width: 480px) {
+	.social-links{
+		float: left;	
+	}
+	
+	
+	#toggle-nav {
+
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		display:block;
+		width: 60px;
+		height: 46px;
+		z-index:1000000;
+		background-color: fade(black, 50%);
+		box-shadow: inset 0px 0px 15px #000;
+		.border-radius(0px 0px 0px 5px);
+		span{
+			background-color: white;
+			display:block;
+			height: 4px;
+			width: 70%;
+			margin: 0px 15% 5px 15%;
+			.transition(all 300ms ease);
+			.border-radius(5px);
+			margin-bottom: 5px;
+			&.one{
+				margin-top: 10px;	
+			}
+		}
+		
+		&:hover{
+			background-color: fade(black, 80%);
+			span{
+				background-color: white;
+			}
+		
+		}
+		
+		&.down{
+			span{
+				position: absolute;
+				&.one{
+					left: 4px;
+					top: 2px;
+					width: 35%;
+					.rotate(-45deg);
+				}
+				&.two{
+					left: 16px;
+					top: 12px;
+					width: 35%;					
+					.rotate(45deg);
+				}	
+				&.three{
+					left: 7px;
+					top: 19px;
+					width: 45%;
+					.rotate(90deg);
+				}					
+			}
+			
+		}
+		
+	}
+	
+	.navigation {
+		.transition(all 250ms ease);
+		height: 0px;
+		overflow: hidden;
+		margin-top: 15px;
+		width: 100%;
+		&.open{
+
+		}
+	
+		#nav.nav {
+			margin-top: 20px;
+			clear:both ;
+			display:block ;
+			position: relative ;
+			float:none ;
+			height: auto ;
+			width: 100% ;
+		}
+		
+		#nav.nav li a,
+			#nav.nav li {
+			width: 100% ;
+			font-size: 14px ;
+			line-height: 30px ;
+			height: 30px ;
+			border: none ;
+			//border-bottom: 1px lighten(@content-bg-color, 5%) solid ;
+			display:block ;
+			position: relative ;
+			float:none;
+			padding: 0px;
+			text-indent: 10px;
+		}
+		
+		#nav li ul{ display: none;}
+	}
+}
+
+/* most android 720p screens landscape */
+@media screen and (max-width: 360px) {
+	
+}
+
+/* iphones portrait */
+@media screen and (max-width: 320px) {
+	
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<plate><head><doctype>html5</doctype><meta http-equiv="Content-Type" content="text/html;charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/><googlefont family="Roboto Slab"/></head><clippings><text name="site_name" name_friendly="Site Name" required="1">Be Creative</text><images name="logo" name_friendly="Site Logo" limit="1">https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-creative-logo.png</images><text name="footer_text" name_friendly="Footer Text">Be Creative, LLC</text>
+</clippings><ingredients><templateset name="homepage" name_friendly="Homepage" view="homepage"><fields><text name="title" name_friendly="Lead in Title" required="1"/><wysiwyg_advanced name="content" name_friendly="Intro Text"/></fields><items><item link_title="Homepage" path_part="zesty_home"><title>It It Herbal</title><content>&lt;h2&gt;The Capsicum genus is in the nightshade family (Solanaceae)&lt;/h2&gt;
+					&lt;p&gt;It is named for the city of Cayenne in French Guiana&lt;/p&gt;
+					&lt;ul&gt;
+					&lt;li&gt;Or Spice&lt;/li&gt;
+					&lt;li&gt;The Into&lt;/li&gt;
+					&lt;li&gt;Make Into&lt;/li&gt;
+					&lt;li&gt;The And&lt;/li&gt;															
+					&lt;/ul&gt;
+					&lt;p&gt;It is generally rated at 30,000 to 50,000 Scoville units&lt;/p&gt;
+					&lt;blockquote&gt;The Capsicum genus is in the nightshade family (Solanaceae)&lt;/blockquote&gt;
+					&lt;p&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalape&#xF1;os, paprika and othersIt is generally rated at 30,000 to 50,000 Scoville units&lt;/p&gt;</content></item></items></templateset></ingredients></plate>
